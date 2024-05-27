@@ -166,7 +166,6 @@ function updateScore() {
   score.textContent = points;
   return points;
 }
-
 /**
 *
 * This function clears the score by setting `points = 0`. It also updates
@@ -267,7 +266,6 @@ function startGame(){
 }
 
 startButton.addEventListener("click", startGame);
-
 
 // Please do not modify the code below.
 // Used for testing purposes.
