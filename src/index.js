@@ -9,7 +9,7 @@ let time = 0;
 let timer;
 let lastHole = 0;
 let points = 0;
-let difficulty = "hard";
+let difficulty = "easy";
 
 /**
  * Generates a random integer within a range.
@@ -135,7 +135,8 @@ function showAndHide(hole, delay){
   const timeoutID = setTimeout(() => {
     toggleVisibility(hole);
     gameOver();
-  }, delay); // TODO: change the setTimeout delay to the one provided as a parameter
+  }, delay); 
+
   return timeoutID;
 };
 
@@ -258,6 +259,7 @@ function stopGame(){
 *
 */
 function startGame(){
+  clearScore();
   setDuration(10);
   startTimer();
   showUp();
